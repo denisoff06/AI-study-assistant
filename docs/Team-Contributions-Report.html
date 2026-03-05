@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyAI Team Contributions Report</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: #1A1A1A;
+      line-height: 1.7;
+      background: #fff;
+      padding: 60px 80px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media print {
+      body { padding: 40px 50px; }
+      .page-break { page-break-before: always; }
+    }
+
+    /* Header */
+    .report-header {
+      text-align: center;
+      padding-bottom: 32px;
+      border-bottom: 3px solid #1A73E8;
+      margin-bottom: 40px;
+    }
+
+    .report-header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1A73E8;
+      margin-bottom: 6px;
+    }
+
+    .report-header .subtitle {
+      font-size: 1.15rem;
+      color: #6B7280;
+      margin-bottom: 4px;
+    }
+
+    .report-header .date {
+      font-size: 0.9rem;
+      color: #9CA3AF;
+    }
+
+    /* Section headings */
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1A73E8;
+      margin-top: 36px;
+      margin-bottom: 16px;
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid #E5E7EB;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #1A1A1A;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p, li {
+      font-size: 0.95rem;
+      color: #374151;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    li { margin-bottom: 5px; }
+
+    /* Member card */
+    .member-card {
+      background: #F8FAFC;
+      border-left: 4px solid #1A73E8;
+      border-radius: 0 10px 10px 0;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+    }
+
+    .member-card .name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1A1A1A;
+    }
+
+    .member-card .role {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #1A73E8;
+      margin-bottom: 10px;
+    }
+
+    .member-card ul {
+      margin-bottom: 0;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid #E5E7EB;
+    }
+
+    th {
+      background: #F0F4F8;
+      font-weight: 600;
+      color: #1A1A1A;
+    }
+
+    /* Overview box */
+    .overview-box {
+      background: #EFF6FF;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    .overview-box p {
+      color: #1E40AF;
+      font-size: 0.92rem;
+    }
+
+    /* Footer */
+    .report-footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1.5px solid #E5E7EB;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #9CA3AF;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="report-header">
+    <h1>StudyAI Team Contributions Report</h1>
+    <p class="subtitle">AI Study Assistant Web Application</p>
+    <p class="date">University Project | March 2026</p>
+  </div>
+
+  <!-- PROJECT OVERVIEW -->
+  <h2>1. Project Overview</h2>
+  <div class="overview-box">
+    <p>
+      <strong>StudyAI</strong> is an AI-powered study assistant that helps university students learn more effectively.
+      Students paste their study notes into the app, and it generates three types of study materials:
+      a structured <strong>Summary</strong>, interactive <strong>Flashcards</strong>, and a multiple-choice <strong>Quiz</strong>.
+      The app is built with a React frontend and a Python Flask backend, powered by the Anthropic Claude API.
+    </p>
+  </div>
+
+  <!-- TECH STACK -->
+  <h2>2. Technology Stack</h2>
+  <table>
+    <tr><th>Technology</th><th>Purpose</th></tr>
+    <tr><td>React + Vite</td><td>Frontend user interface and development tooling</td></tr>
+    <tr><td>Python Flask</td><td>Backend API server</td></tr>
+    <tr><td>Anthropic Claude API</td><td>AI-powered content generation (summaries, flashcards, quizzes)</td></tr>
+    <tr><td>Axios</td><td>HTTP client for frontend-to-backend communication</td></tr>
+    <tr><td>Figma</td><td>UI/UX design and prototyping</td></tr>
+  </table>
+
+  <!-- TEAM MEMBERS -->
+  <h2>3. Team Members &amp; Individual Contributions</h2>
+
+  <!-- Denis -->
+  <div class="member-card">
+    <p class="name">Denis</p>
+    <p class="role">Team Lead | AI Integration | Frontend Development</p>
+    <ul>
+      <li>Led the overall project planning, task delegation, and team coordination throughout the development cycle</li>
+      <li>Set up the project repository and established the folder structure for both frontend and backend</li>
+      <li>Built the main application layout (<code>App.jsx</code>) including state management, tab-based navigation, and API call orchestration</li>
+      <li>Implemented the input screen (<code>InputSection.jsx</code>) with form validation, loading states, and error handling</li>
+      <li>Integrated the Anthropic Claude API into the Flask backend, handling authentication and response parsing</li>
+      <li>Configured parallel API calls so all three modes (summary, flashcards, quiz) generate simultaneously for a smooth user experience</li>
+      <li>Managed environment variables and API key security (<code>.env</code> setup, <code>.gitignore</code>)</li>
+      <li>Conducted end-to-end testing of the full application flow</li>
+    </ul>
+  </div>
+
+  <!-- Wisdom -->
+  <div class="member-card">
+    <p class="name">Wisdom</p>
+    <p class="role">UI/UX Design (Figma)</p>
+    <ul>
+      <li>Designed the complete UI/UX in Figma, creating wireframes and high-fidelity mockups for all screens</li>
+      <li>Established the visual design system: colour palette (blue-grey theme with #F0F4F8 background, #1A73E8 primary accent), typography (Inter font family), and spacing guidelines</li>
+      <li>Designed the mobile-first responsive layout with a bottom navigation bar pattern</li>
+      <li>Created the card-based design language used across Summary, Flashcards, and Quiz screens</li>
+      <li>Designed the flashcard flip interaction and quiz answer feedback states (green for correct, red for incorrect)</li>
+      <li>Iterated on the design based on team feedback to achieve a clean, professional look inspired by Notion and Quizlet</li>
+      <li>Provided the final CSS specifications that were implemented in the frontend (<code>index.css</code>)</li>
+    </ul>
+  </div>
+
+  <!-- Mariyum -->
+  <div class="member-card">
+    <p class="name">Mariyum</p>
+    <p class="role">Backend Development</p>
+    <ul>
+      <li>Built the Flask backend server (<code>app.py</code>) with a RESTful API architecture</li>
+      <li>Implemented the <code>POST /api/generate</code> endpoint that accepts student notes and a mode parameter</li>
+      <li>Added comprehensive input validation: empty notes check, character limit (5000), and mode validation</li>
+      <li>Configured CORS (Cross-Origin Resource Sharing) to allow the frontend to communicate with the backend</li>
+      <li>Implemented JSON response parsing with error handling for malformed AI responses, including stripping markdown code fences</li>
+      <li>Set up environment variable management using <code>python-dotenv</code> for secure API key handling</li>
+      <li>Wrote structured error responses with appropriate HTTP status codes (400 for bad input, 503 for AI failures)</li>
+      <li>Created the <code>requirements.txt</code> for dependency management</li>
+    </ul>
+  </div>
+
+  <!-- Quaysha -->
+  <div class="member-card">
+    <p class="name">Quaysha</p>
+    <p class="role">Prompt Engineering | QA | Documentation</p>
+    <ul>
+      <li>Designed and wrote all three AI prompt templates in <code>prompts.py</code>the core of the AI integration</li>
+      <li>Engineered the summary prompt to produce structured, bullet-pointed summaries under 300 words with no hallucinated content</li>
+      <li>Engineered the flashcard prompt to return valid JSON arrays with understanding-based questions (not just recall)</li>
+      <li>Engineered the quiz prompt to generate 5 well-balanced multiple-choice questions with exactly 4 options each</li>
+      <li>Performed quality assurance testing across all features, verifying AI output accuracy and consistency</li>
+      <li>Wrote the project documentation (<code>docs/PROJECT.md</code>) including setup instructions, API documentation, and folder structure</li>
+      <li>Wrote the AI Integration Guide (<code>docs/AI-INTEGRATION-GUIDE.md</code>) explaining how the API, prompts, and data flow work in beginner-friendly language</li>
+      <li>Tested edge cases: empty notes, very short notes, and notes with special characters</li>
+    </ul>
+  </div>
+
+  <!-- Zainab -->
+  <div class="member-card">
+    <p class="name">Zainab</p>
+    <p class="role">Quiz Feature Development | Presentation Lead</p>
+    <ul>
+      <li>Developed the Quiz component (<code>Quiz.jsx</code>)the most interactive feature of the application</li>
+      <li>Implemented the question-by-question flow with dynamic progress tracking ("Question 1 of 5")</li>
+      <li>Built the answer selection system with instant visual feedback: green highlight for correct answers, red for incorrect with the correct answer shown</li>
+      <li>Created the quiz results screen displaying the final score, percentage-based encouraging messages, and a retake option</li>
+      <li>Developed the Flashcard component (<code>Flashcards.jsx</code>) with a smooth CSS 3D flip animation for the card reveal interaction</li>
+      <li>Implemented the Summary display component (<code>Summary.jsx</code>) with key points, concept tags, and a copy-to-clipboard feature</li>
+      <li>Built the Home/dashboard screen (<code>Home.jsx</code>) with placeholder recent session data</li>
+      <li>Prepared and led the project presentation, creating the demo flow and talking points</li>
+    </ul>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- DEVELOPMENT PROCESS -->
+  <h2>4. Development Process</h2>
+
+  <h3>Phase 1Planning &amp; Design (Week 1)</h3>
+  <ul>
+    <li>Defined project scope and feature requirements as a team</li>
+    <li>Wisdom created UI/UX mockups in Figma and shared with the team for feedback</li>
+    <li>Quaysha researched the Anthropic Claude API and began drafting prompts</li>
+    <li>Denis set up the project repository with React + Vite frontend and Flask backend</li>
+  </ul>
+
+  <h3>Phase 2Core Development (Weeks 2-3)</h3>
+  <ul>
+    <li>Mariyum built the backend API with the Flask server, endpoint, and validation logic</li>
+    <li>Denis developed the main app layout, navigation system, and input screen</li>
+    <li>Zainab built the Quiz, Flashcards, Summary, and Home components</li>
+    <li>Quaysha refined the AI prompts through iterative testing and wrote documentation</li>
+  </ul>
+
+  <h3>Phase 3Integration &amp; Testing (Week 4)</h3>
+  <ul>
+    <li>Denis integrated the frontend with the backend, implementing parallel API calls</li>
+    <li>Quaysha performed QA testing across all features and documented edge cases</li>
+    <li>Wisdom provided final design polish and CSS adjustments</li>
+    <li>Zainab prepared the demo and presentation materials</li>
+  </ul>
+
+  <!-- FEATURES -->
+  <h2>5. Key Features</h2>
+  <table>
+    <tr><th>Feature</th><th>Description</th></tr>
+    <tr><td>AI Summary</td><td>Generates a structured summary with key points and concept tags from student notes</td></tr>
+    <tr><td>Flashcards</td><td>Creates 5-10 interactive flashcards with a flip animation, testing understanding not just recall</td></tr>
+    <tr><td>Quiz</td><td>Produces 5 multiple-choice questions with instant feedback and a final score</td></tr>
+    <tr><td>Parallel Generation</td><td>All three modes generate simultaneously with a single button press</td></tr>
+    <tr><td>Mobile-First Design</td><td>Clean, responsive UI that works on phones, tablets, and desktops</td></tr>
+    <tr><td>Input Validation</td><td>Prevents empty or insufficient notes, with helpful error messages</td></tr>
+  </table>
+
+  <!-- CHALLENGES -->
+  <h2>6. Challenges &amp; Solutions</h2>
+  <table>
+    <tr><th>Challenge</th><th>Solution</th></tr>
+    <tr><td>AI returning JSON wrapped in markdown code fences</td><td>Added a parser to strip <code>```json</code> wrappers before parsing</td></tr>
+    <tr><td>API overload errors (529)</td><td>Implemented error handling with clear user-facing messages and retry guidance</td></tr>
+    <tr><td>Keeping AI responses accurate</td><td>Prompt engineering: explicitly instructed the AI not to invent information beyond the notes</td></tr>
+    <tr><td>Smooth flashcard interactions</td><td>Used CSS 3D transforms with <code>perspective</code> and <code>backface-visibility</code> for a polished flip effect</td></tr>
+    <tr><td>Minimising API costs</td><td>Used Claude Haiku 4.5the fastest and most affordable model, ideal for this use case</td></tr>
+  </table>
+
+  <!-- FUTURE IMPROVEMENTS -->
+  <h2>7. Future Improvements</h2>
+  <ul>
+    <li><strong>PDF Upload</strong>Allow students to upload PDF documents instead of pasting text</li>
+    <li><strong>Saved Sessions</strong>Persist study sessions so students can revisit past materials</li>
+    <li><strong>User Accounts</strong>Login system with individual session history</li>
+    <li><strong>Export Options</strong>Download flashcards as PDF or import into Anki</li>
+    <li><strong>More AI Models</strong>Support for multiple AI providers for comparison</li>
+  </ul>
+
+  <!-- FOOTER -->
+  <div class="report-footer">
+    <p>StudyAI - AI Study Assistant | University Project | March 2026</p>
+    <p>Denis, Wisdom, Mariyum, Quaysha, Zainab</p>
+  </div>
+
+</body>
+</html>
